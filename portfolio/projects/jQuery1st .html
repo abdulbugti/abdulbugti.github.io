@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+   <title>Video Watcher</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  </head>
+  <body>
+
+    <div class="container">
+ 
+    <div class="row">
+      <div class="span12">
+        <h2 class="page-header">Best Videos Ever ❤</h2>
+      </div>
+    </div>
+ 
+    <div class="row">
+      <div class="span3">
+        <ul>
+          <li><a href="https://www.youtube.com/watch?v=TddFnTB_7IM">Trip through the 80s</a></li>
+          <li><a href="https://www.youtube.com/watch?v=epUk3T2Kfno">Otters Holding Hands</a></li>
+          <li><a href="https://www.youtube.com/watch?v=il2IrgFHfsg">The Ooooh Cat</a></li>
+        </ul>
+       </div>
+     </div>
+    </div>
+
+    <script type="text/javascript" src="http://002.powercoders.org/matthias-hueni/curriculum/www.teaching-materials.org/common/youtube.js"></script>
+    <script>
+        var linkElements = document.querySelectorAll('div.span3 a');
+        // Iterate through the LinkElements and get the link individually
+        for (i = 0; i < linkElements.length; i++) {
+            var linkElement = linkElements[i];
+            var videoUrl = linkElement.getAttribute('href');
+            var thumbnailUrl = youtube.generateThumbnailUrl(videoUrl);
+            var thumbnail = document.createElement('img');
+            thumbnail.src = thumbnailUrl;
+            linkElement.parentElement.insertBefore(thumbnail, linkElement);
+
+        }
+    </script>
+  </body>
+</html>

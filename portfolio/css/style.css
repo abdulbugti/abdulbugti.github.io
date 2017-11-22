@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('../fonts/font-awesome/css/font-awesome.css');
+@import url('particles-grid.css');
+
+
+html {
+    height: 100%;
+}
+
+body {
+    font-size: 1.2em;
+    font-family: 'Roboto' sans-serif;
+    background-color: white;
+    color: black;
+    text-align: justify;
+    position: relative;
+    min-height: 100%;
+   
+    
+}
+
+header {
+    position: relative;
+    box-sizing: border-box;
+    font-family: serif;
+    padding: 0px 45px;
+    background-image:url(../images/headerbg1.jpg);
+
+    
+}
+
+header h1, header a{
+    color: darkred;
+    text-decoration: none;
+    padding-left: 50px;
+    font-size: 20px;
+    text-align: left;
+}
+
+
+header h1:hover{
+    color: red;
+}
+
+#burgermenu {
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+#navigation {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    
+}
+    
+
+nav li {
+    text-align:center;  
+    font-size: 1.3em;
+}
+
+
+
+nav li a {
+    display: block;
+    color: darkgray;
+    padding: 10px 20px;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+
+nav li a:hover {
+    background-image: linear-gradient(darkred, red);
+    color: white;
+}
+
+
+nav li a.selected {
+    background-color: darkred;
+    color: white;
+}
+
+
+.icon {
+    display: none;
+    position: absolute;
+}
+
+.icon img
+{
+    width:50px;    
+}
+
+
+
+h1, h2{
+    color: red;
+}
+
+
+img.about {
+    width: 200px;
+    float: left;
+    margin-right: 10px;
+
+}
+
+
+
+.testborder {
+    border: 2px solid red;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+
+
+.frontpagebox:hover{
+    background-color: darkgray;
+    text-align: center;
+    
+}
+
+.frontpagebox ul {
+    text-align: left;
+}
+
+.frontpagebox a {
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+.frontpagebox a:hover {
+    color: darkred;
+
+}
+
+.fa-4x
+{margin: 20px;}
+
+
+
+
+
+hr{
+    clear:both;
+}
+.skills {
+    border: 1px solid black;
+    margin: 10px 10px 10px 10px;
+    padding:10px 10px;
+    border-radius: 10px;
+ 
+    
+}
+
+.skills a {
+    text-decoration: none;
+}
+
+
+
+
+#five {
+    border: 5px solid black;
+    height:100px;
+    width: 100%;
+}
+
+#five article {
+    float: left;
+    width: calc(100% / 5);
+    border: 2px red solid;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: antiquewhite;
+    padding: 8px 16px;
+    text-align: center;
+    position: absolute;
+    left:0px;
+    bottom: 0px;
+    width: 100%;
+    display: none;
+    
+}
+
+label {
+    display: block;
+}
+
+
+
+
+#mainpage {
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+#mainpage i {
+    margin: 5px;
+}
+
+
+
+@media screen and (min-width: 600px) {
+   
+    body {
+        margin-left: 100px;
+        background-image: url(../images/bodybg.jpg);
+        background-repeat: repeat-y;
+        background-size: 100px;
+    }
+
+    main {
+        padding-bottom: 100px;
+        margin: 0px 100px;
+    }
+ 
+   header .container {
+        position: relative;
+        margin: 0 auto;
+        max-width: 900px;
+        text-align: justify;
+    
+    }
+    
+    #burgermenu {
+        display: none;
+        
+    }  
+    .icon {
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    left: 285px;
+}
+    .icon {
+        display: block;
+    }
+    
+    .icon img {
+        width: 80px;
+    }
+    
+    #navigation {
+        display: block;
+    }
+    
+ header h1, header a{
+    font-size: 30px;
+    text-align: center;
+    margin: 0 auto;
+    }
+
+   
+    nav {
+        background-image: linear-gradient(darkred, red);
+        width:100%;
+    }
+
+    nav ul {
+        margin: 0 auto;
+        display: block;
+        background-color: #333;
+        max-width: 900px;
+        text-align: center;
+    }
+
+    nav li {
+        width: 25%;
+        float: left;
+        background-color: #333;
+        box-sizing: border-box;
+        border-left: 5px solid white;
+        
+    }
+    
+    nav li:last-child {
+        border-right:5px solid white;
+    }
+
+    
+    nav:after {
+        clear:left;
+        content:'';
+        display:block;
+    }
+   
+    .frontpagebox {
+     transform: rotate(15deg);
+    background-color: white;
+  
+    }
+
+    
+    
+    
+    .skills
+    {
+        width:250px;
+        text-align: left;
+    }
+    
+    .fa-4x {
+        margin: 10px;
+    }
+    
+    
+ 
+    
+input, textarea,
+input:focus, textarea:focus{
+    border:none;
+    border-bottom: 1px solid black;
+    width: 500px;
+    margin-bottom: 10px;
+}
+
+textarea,
+textarea:focus{
+  border :1px solid black;
+  min-height:200px;
+    
+}
+
+
+  .icon img {
+         transition:all 2s ease-in-out;
+    }
+    
+    .icon img:hover {
+        transform:rotateX(360deg);
+    }
+    
+    footer {
+        display: block;
+    }
+    
+    #mainpage {
+    margin: 50px 200px;
+    text-align: center;
+}
+
+@media screen and (min-width : 800px) {
+
+    
+    
+    header {
+        
+         position: relative;
+         width:100%;
+    }
+
+    
+    
+ 
+    .contact, .skills {
+        display: inline-block;
+        vertical-align: top;
+        height: 400px;
+    }
+
+    
+        
+    .icon {
+    position: absolute;
+    top: 15px;
+    left: 360px;
+
+}
+    
+  
+    }
+    
+
+    
