@@ -50,12 +50,13 @@ a:hover{
 
 #socialmedia {
     position: fixed;
-    bottom:0px;
+    bottom:100px;
 }
 
 #socialmedia i {
     color: black;
     left:20%;
+    font-size: 2rem;
 }
 
 #socialmedia i:hover {

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/style.css"  rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Contact | Abdul's Portfolio</title>
 </head>
 <body>
@@ -61,7 +62,7 @@
         <label for="msg">Message:</label>
         <textarea id="msg" name="user_message"></textarea>
         <div class="button">
-  <button type="submit">Send your message</button>
+  <button type="submit" id="submit">Send your message</button>
 </div>
     </div>
 </form>
@@ -70,6 +71,29 @@
     ©2017, All rights reserved
         </footer>
     <script src="../script/script.js"></script>
+  <script>
+        $('#submit').click(function(e) {
+            e.preventDefault();
+            $.ajax({
+                method: 'post',
+                url: 'https://002.powercoders.org/matthias-hueni/api/contact.php',
+                dataType: 'json',
+                data: {
+                    'to_email': 'abdulnawaz.bugti@powercoders.org',
+                    'from_email': $('#mail').val(),
+                    'from_name': $('#name').val(),
+                    'message': $('#msg').val()
+                },
+                success: function(result) {
+                    alert('ok');
+                },
+                error: function(result) {
+                    alert('error');
+                }
+            });
+        });
+
+    </script>
 
 </body>
 </html>
