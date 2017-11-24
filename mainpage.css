@@ -1,0 +1,124 @@
+@import url('portfolio/fonts/font-awesome/css/font-awesome.css');
+
+html {
+    font-family: sans-serif;
+}
+body {
+    background: url('portfolio/images/bg-mobile.jpg') no-repeat center center fixed; 
+   
+}
+    
+
+#main {
+    position: absolute;
+    top: 80px;
+    left: 10px;
+
+}
+
+#main a {
+    text-decoration: none;
+}
+
+#main h1 {
+    font-weight: bold;
+    color:brown;
+}
+
+#main h2 {
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+}
+ul li {
+    display: inline;
+    padding: 5px;
+}
+ul li a {
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: bold;
+    color:black;
+}
+
+a:hover{
+    color: brown;
+}
+
+
+#socialmedia {
+    position: fixed;
+    bottom:100px;
+}
+
+#socialmedia i {
+    color: black;
+    left:20%;
+    font-size: 2rem;
+}
+
+#socialmedia i:hover {
+    color:brown;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { ... }
+
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    
+ 
+body {
+    background: url('portfolio/images/main.jpg') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+#main {
+    position: absolute;
+    top: 140px;
+    left: 150px;
+
+}
+
+#main h1 {
+    font-size: 4.0rem;
+    margin: 0px;
+}
+
+#main h2 {
+    font-weight: bold;
+    padding-left: 50%;
+    
+}
+
+    #main a {
+        
+        font-size: 2.3rem;
+        
+    }
+
+#socialmedia {
+    position: fixed;
+    bottom:0px;
+    left:20%;
+}
+
+    #socialmedia i {
+    font-size: 100px;
+    padding: 10px;
+}
+//faol
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { ... }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
