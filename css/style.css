@@ -1,0 +1,75 @@
+.brand-heading
+{
+    font-size: 50px !important;
+}
+
+.mainbg {
+    background: url('../img/gwadarsunrise.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.main img {
+    width:200px;
+}
+
+.main h1 {
+    color:black;
+}
+.intro-text {
+    font-style: italic;
+}
+
+.email {
+    color:red;
+}
+
+.skills 
+{
+    text-align: left;
+    
+}
+
+.rightborder {
+    border-right: 2px solid yellow;
+}
+.leftborder {
+    border-left: 2px solid yellow;
+}
+
+.skills ul
+{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.skills h4 {
+    color: yellow;
+}
+
+.resume {
+    
+    padding-top: 70px;
+    
+
+    
+}
+
+.aboutme p {
+    text-align: left;
+}
+
+.pic {
+    background: url('../img/profile.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 400px;
+    
+}
+
+.btn-default {
+    color: yellow;
+    border: 1px solid greenyellow;
+}
+    
+.btn-default:hover {
+    background-color: yellowgreen;
+}
